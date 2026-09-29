@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="login-card">
+            <div class="brand">
+                <div class="brand-mark">A</div>
+                <div>
+                    <h1><span>Login</span></h1>
+                    <p>Welcome back</p>
+                </div>
+            </div>
+
+            <div class="intro">
+                <h2>Sign in to your account</h2>
+                <p>Enter your details below to continue.</p>
+            </div>
+
+            <form id="loginForm" novalidate>
+                <div class="field">
+                    <label for="email">Email address</label>
+                    <div class="input-wrap">
+                        <span class="input-icon">✉</span>
+                        <input type="email" id="email" placeholder="you@example.com" autocomplete="email">
+                    </div>
+                    <small class="error" id="emailError"></small>
+                </div>
+
+                <div class="field">
+                    <div class="label-row">
+                        <label for="password">Password</label>
+                        <a href="#" id="forgotLink">Forgot password?</a>
+                    </div>
+                    <div class="input-wrap">
+                        <span class="input-icon">⌑</span>
+                        <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password">
+                        <button type="button" class="toggle-password" id="togglePassword" aria-label="Show password">Show</button>
+                    </div>
+                    <small class="error" id="passwordError"></small>
+                </div>
+
+                <div class="options">
+                    <label class="remember">
+                        <input type="checkbox" id="remember">
+                        <span>Remember me</span>
+                    </label>
+                </div>
+
+                <button class="login-btn" type="submit">
+                    <span>Sign in</span>
+                    <span class="arrow">→</span>
+                </button>
+
+                <p class="status" id="statusMessage" role="status"></p>
+            </form>
+
+            <div class="divider"><span>or</span></div>
+
+            <button class="demo-btn" id="demoBtn" type="button">Try demo login</button>
+
+            <p class="signup">Don't have an account? <a href="#">Create one</a></p>
+        </section>
+
+        <p class="footer">© 2026 NovaLogin · Built with HTML, CSS & JavaScript</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
